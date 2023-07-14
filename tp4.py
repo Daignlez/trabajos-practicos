@@ -73,19 +73,11 @@ hacer_remera("XL", "Confia en el proceso")
 de la serie de Fibonacci. En esta serie, los primeros dos números son 0 y 1, y cada sucesivo
 número es la suma de los dos números inmediatamente anteriores """
 def fibonacci(n):
-    if n <= 0:
-        return []
-    elif n == 1:
-        return [0]
-    elif n == 2:
-        return [0, 1]
     seriedefibonacci = [0, 1]
     for i in range(2, n):
         seriedefibonacci.append(seriedefibonacci[i-1] + seriedefibonacci[i-2])
     return seriedefibonacci
-numero = int(input("Ingrese un limite para la serie: "))
-serie = fibonacci(numero)
-print("Serie de Fibonacci con", numero, "elementos:",serie)
+print("Serie fibonacci",fibonacci(n=13))
 
 
 
